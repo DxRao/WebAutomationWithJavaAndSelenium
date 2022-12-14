@@ -9,7 +9,7 @@ public class StudentMarks {
 			
 			if(ary > 80) {
 				
-				System.out.println("Marks scored above 80 by students are: "+ ary);				
+				System.out.println("Marks scored more than 80 by the students are: "+ ary);				
 			}			
 		}
 	}
