@@ -8,7 +8,7 @@ public class AddPrintList_2 {
 		// Creation of ArrayList object and its List type reference variable
 		List<Integer> l1 = new ArrayList<>();
 		
-		// Adding values to the object
+		// Adding values to the object 
 		l1.add(10);
 		l1.add(20);
 		l1.add(40);
