@@ -1,5 +1,6 @@
 import java.util.Scanner;
-	// Task-1
+	
+			// Task-1
 public class Trainer { // Trainer class creation
 	
 	// Instance variables
@@ -48,76 +49,14 @@ public class Trainer { // Trainer class creation
 		
 		// Task-2:
 		
-		// Creation of 2-D Trainer Array to store various Trainers information.		
-		String[][] trainer = new String[3][4];		
-				
-		//Trainer1 info stored in trainer Array
-		trainer[0][0] = "Mukesh";
-		trainer[0][1] = "Selenium";
-		trainer[0][2] = "mukesh@gmail.com";
-		trainer[0][3] = "1";
+		// Creation of Trainer Array to store various Trainers' objects information.	
 		
-		//Trainer2 info stored in trainer Array
-		trainer[1][0] = "Hitesh";
-		trainer[1][1] = "Dev";
-		trainer[1][2] = "mukesh@gmail.com";
-		trainer[1][3] = "2";
+		Trainer[] trainer = new Trainer[3];
 		
-		//Trainer3 info stored in trainer Array
-		trainer[2][0] = "Mukesh";
-		trainer[2][1] = "DevOps";
-		trainer[2][2] = "mukesh@gmail.com";
-		trainer[2][3] = "3";
+		trainer[0] = trainer1;
+		trainer[1] = trainer2;
+		trainer[2] = trainer3;
 		
-		//Task-3: Students Info
-		
-		// Creation of Scanner Object to take input from key board.		
-		Scanner scan = new Scanner(System.in);
-		
-		System.out.println("Please enter number of Students: ");
-		
-		int n = scan.nextInt();		
-		
-		// Defining size of 2-D array dynamically with the help of users input.
-		String[][] student = new String[n][5];
-		
-		for(int i = 0; i < n; i++) {
-			for(int j =0; j < 1; j++) {	
-			
-				// Entering student name, email, phone, address, status info into trainer 2-D array.
-				
-				System.out.println("Please enter student name: ");
-				student[i][j] = scan.next();
-				
-				System.out.println("Please enter student email: ");
-				student[i][j+1] = scan.next();
-				
-				System.out.println("Please enter student phone number: ");
-				student[i][j+2] = scan.next();
-				
-				System.out.println("Please enter student address: ");
-				student[i][j+3] = scan.next();
-				
-				System.out.println("Please enter student status (Active or In Active): ");
-				student[i][j+4] = scan.next();
-				
-			} // end of j
-			
-		} // end of i
-		
-		// Retrieving the information of a given student as requested by the user
-		System.out.println("Please enter the student number for information retrieval: ");
-		
-		int num = scan.nextInt();		
-		
-		//	Printing out all the information pertaining to a given student as requested by user
-		System.out.print("Student number:" + num + " Name, E-mail, Phone Number, Address, and Status are: ");
-			
-		for(int j = 0; j < 5; j++) {				
-				
-			System.out.print( student[num][j] + ", ");			
-				
-		}// end of j		
 		
 	}//end of main	
 
