@@ -23,7 +23,7 @@ public class FindSubString {
 			
 			if(str.contains("Mobile")) {
 			
-			System.out.print(true + " ");
+				System.out.print(true + " ");
 			
 			}			
 			else {
