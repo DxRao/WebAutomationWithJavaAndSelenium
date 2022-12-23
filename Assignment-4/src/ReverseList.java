@@ -36,11 +36,5 @@ public class ReverseList {
 			System.out.print(l2.get(i) + ", ");
 		
 		}
-
-
-
-
-
 	}
-
 }
