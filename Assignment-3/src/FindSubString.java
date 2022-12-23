@@ -16,15 +16,13 @@ public class FindSubString {
 		l1.add("Mobile Automation");
 		
 		
-		// Printing true or false depending on whether List l1 contains 'Mobile' substring in any element.
-		
+		// Printing true or false depending on whether List l1 contains 'Mobile' substring in any element.		
 			
 		for(String str: l1) {
 			
 			if(str.contains("Mobile")) {
 			
-				System.out.print(true + " ");
-			
+				System.out.print(true + " ");			
 			}			
 			else {
 				
