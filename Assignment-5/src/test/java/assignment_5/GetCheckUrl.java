@@ -53,7 +53,7 @@ public class GetCheckUrl {
 		}
 		else {
 			
-			System.out.println("Yes ... Title contains 'HRM' string in it");
+			System.out.println("No ... Title doesn't contain 'HRM' string in it");
 			
 		}		
 		
