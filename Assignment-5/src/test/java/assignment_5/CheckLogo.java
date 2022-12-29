@@ -13,21 +13,17 @@ public class CheckLogo {
 		
 		WebDriver driver = new ChromeDriver();
 		
-		driver.get("http://www.amazon.in");
+		//driver.get("http://www.amazon.in");
 		
-		//driver.get("https://opensource-demo.orangehrmlive.com/web/index.php/auth/login");		
-		
+		driver.get("https://opensource-demo.orangehrmlive.com/web/index.php/auth/login");			
 		
 		List<WebElement> links = driver.findElements(By.tagName("img"));	    
 		 
 	        for(WebElement ele:links){
 	        	
 	            System.out.println(ele.getAttribute("src"));
-	        }
-	    		
+	        }	    		
 		
-		// driver.close();	
-	}
-	
+		driver.close();	
+	}	
 }
-
