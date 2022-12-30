@@ -11,11 +11,15 @@ public class CaptureStoreHrefValues {
 
 	public static void main(String[] args) {
 		
-		WebDriver driver = new ChromeDriver();			
+		WebDriver driver = new ChromeDriver();
 		
-		driver.get("https://opensource-demo.orangehrmlive.com/web/index.php/auth/login");		
+		driver.get("http://www.google.com");
 		
-		WebElement footer = driver.findElement(By.xpath("//div[@class='orangehrm-login-footer-sm']"));
+		//driver.get("https://opensource-demo.orangehrmlive.com/web/index.php/auth/login");		
+		
+		//WebElement footer = driver.findElement(By.xpath("//div[@class='orangehrm-login-footer-sm']"));
+		
+		WebElement footer = driver.findElement(By.xpath("//div[@id='SIvCob']"));
 		
 		List<WebElement> links = footer.findElements(By.tagName("a")); 
 	    		
@@ -37,6 +41,6 @@ public class CaptureStoreHrefValues {
 		    System.out.println(set.getKey() + " = " + set.getValue());
 		}
 		
-		driver.close();	
+		//driver.close();	
 	}	
 }
